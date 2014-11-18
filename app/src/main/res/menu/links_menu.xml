@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <item
+        android:id="@+id/add_link"
+        android:icon="@android:drawable/ic_menu_add"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:title="Add"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/share_link"
+        android:icon="@android:drawable/ic_menu_share"
+        android:orderInCategory="101"
+        android:showAsAction="ifRoom"
+        android:title="Share"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:orderInCategory="102"
+        android:showAsAction="never"
+        android:title="@string/action_settings"
+        app:showAsAction="never"/>
+
+</menu>

@@ -1,0 +1,43 @@
+<android.support.v4.widget.DrawerLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <!-- ViewSwitcher
+            android:id="@+id/viewSwitcher"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inAnimation="@animator/fadein"
+            android:outAnimation="@animator/fadeout" -->
+
+            <ImageView
+                android:id="@+id/splashImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:src="@drawable/splash"
+                android:visibility="invisible" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/web_viewer"
+                android:visibility="visible" />
+        <!-- /ViewSwitcher-->
+    </FrameLayout>
+
+    <include
+        android:id="@+id/drawer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        layout="@layout/links_drawer"
+        android:orientation="vertical" />
+
+</android.support.v4.widget.DrawerLayout>
