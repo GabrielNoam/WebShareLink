@@ -13,7 +13,7 @@ public class Link
 	private String link;
 
     // this is a comment
-    
+
 	public Link(Cursor cursor) 
 	{
 		int idColumn = cursor.getColumnIndex(Links.ID_COLUMN);
